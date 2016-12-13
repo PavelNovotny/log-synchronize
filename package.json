@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PavelNovotny/log-synchronize/issues"
   },
-  "homepage": "https://github.com/PavelNovotny/log-synchronize#readme"
+  "homepage": "https://github.com/PavelNovotny/log-synchronize#readme",
+  "dependencies": {
+    "ssh2": "^0.5.4"
+  }
 }
