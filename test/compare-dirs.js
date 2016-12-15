@@ -4,6 +4,7 @@
  */
 var Client = require('ssh2').Client;
 var translate = require('./translate-name.js');
+var transfer = require('./transfer.js');
 
 
 function connectionParameters(server, user) {
@@ -19,40 +20,38 @@ function connectionParameters(server, user) {
 function listServerDir(dir, server, user, source, callback) {
     var conn = new Client();
     conn.on('ready', function() {
-        console.log('Client :: ready');
+        //console.log('Client :: ready');
         conn.sftp(function(err, sftp) {
             if (err) throw err;
             sftp.readdir(dir, function(err, list) {
                 if (err) throw err;
-                conn.end();
+                if (conn.end()) {
+                    console.log('closing list server files OK');
+                } else {
+                    console.log('Problem closing list server files');
+                }
                 callback(list, source);
             });
         });
+    }).on('continue', function() {
+        console.log('Should continue');
+    }).on('error', function(e) {
+        console.log(e);
     }).connect(connectionParameters(server, user));
 }
 
-//todo use params
-var params =  {
-    dir: "",
-    server: "",
-    username: "",
-    domain:"",
-    source: false
-}
-
-
-
-function process() {
+function process(sourceSrv, destSrv, compare_pattern) {
+    var domain = sourceSrv.dir.indexOf('other') !== -1?'other':'jms';
     var completed = 0;
     var tasks = [
         function (callback) {
-            listServerDir('/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs', 'sxcip413vm.ux.to2cz.cz', 'x0534049', true, callback);
+            listServerDir(sourceSrv.dir, sourceSrv.server, sourceSrv.username, true, callback);
         }
         ,function (callback) {
-            listServerDir('/appl/home/ciplogs/logs/gf_esb_predpr_logs', 'LXCIPPPT401.ux.to2cz.cz', 'ciplogs', false, callback);
+            listServerDir(destSrv.dir, destSrv.server, destSrv.username, false, callback);
         }
     ];
-    var source, dest
+    var source, dest;
     tasks.forEach(function(task) {
         task(function(list, isSource) {
             if (isSource) {
@@ -61,14 +60,15 @@ function process() {
                 dest = list;
             }
             if(++completed === tasks.length) {
-                compareLists(source, dest);
+                var transferList = compareLists(source, dest, domain, compare_pattern);
+                transfer.transfer(sourceSrv, destSrv, domain, transferList);
+                console.log("all tasks finished.");
             }
         });
     });
 }
 
-function compareLists(source, dest) {
-    var compare_pattern = 'audit.20161213';
+function compareLists(source, dest, domain, compare_pattern) {
     source.forEach(function(sourceItem) {
         sourceItem.transferEligible = false;
         if (sourceItem.filename.indexOf(compare_pattern) !== -1) {
@@ -77,21 +77,61 @@ function compareLists(source, dest) {
             dest.forEach(function(destItem) {
                 if (destItem.filename.indexOf(compare_pattern) !== -1) {
                     //console.log('comparing ' + sourceItem.filename + '->' + destItem.filename);
-                    if ((translate.translateEsbName(sourceItem.filename, "other") === destItem.filename) || (translate.translateEsbName(sourceItem.filename, "other")+'.bgz' === destItem.filename)) {
+                    if ((translate.translateEsbName(sourceItem.filename, domain) === destItem.filename) || (translate.translateEsbName(sourceItem.filename, domain)+'.bgz' === destItem.filename)) {
                         sourceItem.transferred = true;
                     }
                 }
             });
         }
     });
+    var transferList = [];
     source.forEach(function(sourceItem) {
         if (sourceItem.transferEligible && !sourceItem.transferred) {
-            console.log('should transfer ' + sourceItem.filename + '->' + translate.translateEsbName(sourceItem.filename, "other"));
+            console.log('should transfer ' + sourceItem.filename + '->' + translate.translateEsbName(sourceItem.filename, domain));
+            transferList.push(sourceItem);
         } else if (sourceItem.transferEligible) {
             console.log('already transferred ' + sourceItem.filename);
         }
     });
-    console.log("all tasks finished.");
+    console.log('returning transfer list');
+    return transferList;
 }
 
-process();
+var other1 =  {
+    dir: '/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs',
+    server: 'sxcips403vm.ux.to2cz.cz',
+    username: 'x0534049'
+};
+var other2 =  {
+    dir: '/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs',
+    server: 'sxcips404vm.ux.to2cz.cz',
+    username: 'x0534049'
+};
+var jms1 =  {
+    dir: '/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs',
+    server: 'sxcips403vm.ux.to2cz.cz',
+    username: 'x0534049'
+};
+var jms2 =  {
+    dir: '/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs',
+    server: 'sxcips404vm.ux.to2cz.cz',
+    username: 'x0534049'
+};
+var logServer =  {
+    dir: "/appl/home/ciplogs/logs/gf_esb_predpr_logs",
+    server: "LXCIPPPT401.ux.to2cz.cz",
+    username: "ciplogs"
+}
+
+var date = new Date();
+var dayIndex = date.getDate();
+var day = dayIndex<10?'0'+dayIndex:''+dayIndex;
+var monthIndex = date.getMonth()+1;
+var month = monthIndex<10?'0'+monthIndex:''+monthIndex;
+var year = date.getFullYear();
+
+var pattern = 'audit.' + year + month + day;
+process(other1, logServer, pattern);
+//process(other2, logServer, pattern);
+process(jms1, logServer, pattern);
+process(jms2, logServer, pattern);
