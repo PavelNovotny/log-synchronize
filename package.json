@@ -2,7 +2,7 @@
   "name": "log-synchronize",
   "version": "1.0.0",
   "description": "log synchronization tool",
-  "main": "lib/log-synchronize.js",
+  "main": "lib/index-logserver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
