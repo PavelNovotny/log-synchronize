@@ -1,0 +1,36 @@
+{
+  "transfers" :[
+    {
+      "server" : "sxcip413vm.ux.to2cz.cz",
+      "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
+      "port": 22,
+      "username": "x0534049",
+      "passphrase": "bibione",
+      "files" :[
+        {
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s1.audit",
+          "destFolder":"/Users/pavelnovotny/Downloads/transfer"
+        },{
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/aspect_alsb_s1.audit",
+          "destFolder":"/Users/pavelnovotny/Downloads/transfer"
+        }
+      ]
+    }
+    ,{
+      "server" : "sxcip414vm.ux.to2cz.cz",
+      "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
+      "port": 22,
+      "username": "x0534049",
+      "passphrase": "bibione",
+      "files" :[
+        {
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s2.audit",
+          "destFolder":"/Users/pavelnovotny/Downloads/transfer"
+        },{
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/aspect_alsb_s2.audit",
+          "destFolder":"/Users/pavelnovotny/Downloads/transfer"
+        }
+      ]
+    }
+  ]
+}

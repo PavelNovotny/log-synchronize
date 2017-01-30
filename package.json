@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/PavelNovotny/log-synchronize#readme",
   "dependencies": {
+    "nconf": "^0.8.4",
     "ssh2": "^0.5.4"
   }
 }
