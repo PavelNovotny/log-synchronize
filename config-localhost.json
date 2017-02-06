@@ -1,11 +1,12 @@
 {
+  "logLevel" : "info",
   "transfers" :[
     {
-      "server" : "sxcip413vm.ux.to2cz.cz",
-      "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
+      "server" : "sxcip211vm.ux.to2cz.cz",
+      "privateKey" : "/Users/pavelnovotny/Downloads/ciplogs/id_rsa",
       "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
+      "username": "transbea",
+      "passphrase": null,
       "files" :[
         {
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s1.audit",
