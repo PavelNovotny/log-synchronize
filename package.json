@@ -3,21 +3,17 @@
   "version": "1.0.0",
   "description": "log synchronization tool",
   "main": "lib/scheduler.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PavelNovotny/log-synchronize.git"
+    "url": "git+https://gitce.cz.o2:group_integrace/log-synchronize.git"
   },
   "author": "Pavel Novotny",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PavelNovotny/log-synchronize/issues"
+    "url": "git@gitce.cz.o2:group_integrace/log-synchronize.git"
   },
-  "homepage": "https://github.com/PavelNovotny/log-synchronize#readme",
+  "homepage": "git@gitce.cz.o2:group_integrace/log-synchronize.git#readme",
   "dependencies": {
-    "concat-files": "^0.1.1",
     "nconf": "^0.8.4",
     "ssh2": "^0.5.4",
     "winston": "^2.3.1"
