@@ -19,7 +19,7 @@
   "transfers" :[
     {
       "server" : "sxcip413vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh",
+      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
       "port": 22,
       "username": "x0534049",
       "passphrase": "bibione",
@@ -35,7 +35,7 @@
     },
     {
       "server" : "sxcip414vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh",
+      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
       "port": 22,
       "username": "x0534049",
       "passphrase": "bibione",
@@ -51,7 +51,7 @@
     },
     {
       "server" : "sxcips404vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh",
+      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
       "port": 22,
       "username": "x0534049",
       "passphrase": "bibione",
@@ -73,7 +73,7 @@
     },
     {
       "server" : "sxcips403vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh",
+      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
       "port": 22,
       "username": "x0534049",
       "passphrase": "bibione",
