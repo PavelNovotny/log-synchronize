@@ -1,19 +1,31 @@
 {
   "logLevel" : "info",
   "download-interval" : 15,
-  "folders" :[
+  "local-transfer" :[
     {
-      "transferFolder":"/Users/pavelnovotny/Downloads/transfer/legacy",
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy",
       "hashSeekFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs"
     },{
-      "transferFolder":"/Users/pavelnovotny/Downloads/transfer/maintest",
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/maintest",
       "hashSeekFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs"
     },{
-      "transferFolder":"/Users/pavelnovotny/Downloads/transfer/e2e",
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/e2e",
       "hashSeekFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/e2e_esb_predpr_logs"
     }
   ],
-  "transfers" :[
+  "test-local-transfer" :[
+    {
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy",
+      "hashSeekFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/maintest",
+      "hashSeekFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/e2e",
+      "hashSeekFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/e2e_esb_predpr_logs"
+    }
+  ],
+  "remote-transfer" :[
     {
       "server" : "sxcip413vm.ux.to2cz.cz",
       "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",

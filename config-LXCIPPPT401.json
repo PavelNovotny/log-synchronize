@@ -1,22 +1,37 @@
 {
   "logLevel" : "info",
   "download-interval" : 30,
-  "folders" :[
+  "local-transfer" :[
     {
-      "transferFolder":"/appl/home/ciplogs/node-apps/transfer/legacy",
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/legacy",
       "hashSeekFolder":"/appl/home/ciplogs/logs/esb_predpr_logs"
     },{
-      "transferFolder":"/appl/home/ciplogs/node-apps/transfer/maintest",
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/maintest",
       "hashSeekFolder":"/appl/home/ciplogs/logs/gf_esb_predpr_logs"
     },{
-      "transferFolder":"/appl/home/ciplogs/node-apps/transfer/systest",
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/systest",
       "hashSeekFolder":"/appl/home/ciplogs/logs/esb_test_logs"
     },{
-      "transferFolder":"/appl/home/ciplogs/node-apps/transfer/e2e",
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/e2e",
       "hashSeekFolder":"/appl/home/ciplogs/logs/e2e_esb_predpr_logs"
     }
   ],
-  "transfers" :[
+  "test-local-transfer" :[
+    {
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/legacy",
+      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/legacy/hashseek"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/maintest",
+      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/maintest/hashseek"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/systest",
+      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/systest/hashseek"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/e2e",
+      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/e2e/hashseek"
+    }
+  ],
+  "remote-transfer" :[
     {
       "server" : "sxcip413vm.ux.to2cz.cz",
       "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
