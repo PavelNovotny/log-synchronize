@@ -3,108 +3,187 @@
   "download-interval" : 30,
   "local-transfer" :[
     {
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/legacy",
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/legacy",
       "hashSeekFolder":"/appl/home/ciplogs/logs/esb_predpr_logs"
     },{
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/maintest",
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/maintest",
       "hashSeekFolder":"/appl/home/ciplogs/logs/gf_esb_predpr_logs"
     },{
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/systest",
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/systest",
       "hashSeekFolder":"/appl/home/ciplogs/logs/esb_test_logs"
     },{
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/e2e",
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/e2e",
       "hashSeekFolder":"/appl/home/ciplogs/logs/e2e_esb_predpr_logs"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/b2b_predpr",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/b2b_predpr/hashseek"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/b2b_test",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/b2b_test/hashseek"
     }
+
   ],
   "test-local-transfer" :[
     {
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/legacy",
-      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/legacy/hashseek"
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/legacy",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/legacy/hashseek"
     },{
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/maintest",
-      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/maintest/hashseek"
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/maintest",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/maintest/hashseek"
     },{
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/systest",
-      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/systest/hashseek"
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/systest",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/systest/hashseek"
     },{
-      "sourceFolder":"/appl/home/ciplogs/node-apps/transfer/e2e",
-      "hashSeekFolder":"/appl/home/ciplogs/node-apps/transfer/e2e/hashseek"
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/e2e",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/e2e/hashseek"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/b2b_predpr",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/b2b_predpr/hashseek"
+    },{
+      "sourceFolder":"/appl/home/ciplogs/logs/transfer/b2b_test",
+      "hashSeekFolder":"/appl/home/ciplogs/logs/transfer/b2b_test/hashseek"
     }
+
+
   ],
   "remote-transfer" :[
     {
-      "server" : "sxcip413vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
+      "server" : "sxcip211vm.ux.to2cz.cz",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
       "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
+      "username": "cip_logs",
+      "passphrase": null,
+      "files" :[
+        {
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_b2b_test/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/b2b_test"
+        },{
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_b2b_test/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/b2b_test"
+        }
+      ]
+    },
+    {
+      "server" : "sxcip211vm.ux.to2cz.cz",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+      "port": 22,
+      "username": "cip_logs",
+      "passphrase": null,
+      "files" :[
+        {
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/b2b_predpr"
+        },{
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/b2b_predpr"
+        }
+      ]
+    },
+    {
+      "server" : "sxcip415vm.ux.to2cz.cz",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+      "port": 22,
+      "username": "cip_logs",
+      "passphrase": null,
+      "files" :[
+        {
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/systest"
+        },{
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/systest"
+        }
+      ]
+    },
+    {
+      "server" : "sxcip416vm.ux.to2cz.cz",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+      "port": 22,
+      "username": "cip_logs",
+      "passphrase": null,
+      "files" :[
+        {
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/systest"
+        },{
+          "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/aspect_alsb_s1.audit",
+          "destFolder":"/appl/home/ciplogs/logs/transfer/systest"
+        }
+      ]
+    },
+    {
+      "server" : "sxcip413vm.ux.to2cz.cz",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+      "port": 22,
+      "username": "cip_logs",
+      "passphrase": null,
       "files" :[
         {
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s1.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/legacy"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/legacy"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/aspect_alsb_s1.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/legacy"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/legacy"
         }
       ]
     },
     {
       "server" : "sxcip414vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
       "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
+      "username": "cip_logs",
+      "passphrase": null,
       "files" :[
         {
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s2.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/legacy"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/legacy"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/aspect_alsb_s2.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/legacy"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/legacy"
         }
       ]
     },
     {
       "server" : "sxcips404vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
       "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
+      "username": "cip_logs",
+      "passphrase": null,
       "files" :[
         {
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s2.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/maintest"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/maintest"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/aspect_alsb_s2.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/maintest"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/maintest"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/aspect_alsb_s2.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/e2e"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/e2e"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/aspect_alsb_s2.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/e2e"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/e2e"
         }
       ]
     },
     {
       "server" : "sxcips403vm.ux.to2cz.cz",
-      "privateKey" : "/appl/home/ciplogs/node-apps/transfer/.ssh/id_rsa",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
       "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
+      "username": "cip_logs",
+      "passphrase": null,
       "files" :[
         {
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/aspect_alsb_s1.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/maintest"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/maintest"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/aspect_alsb_s1.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/maintest"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/maintest"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/aspect_alsb_s1.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/e2e"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/e2e"
         },{
           "remoteFile":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/aspect_alsb_s1.audit",
-          "destFolder":"/appl/home/ciplogs/node-apps/transfer/e2e"
+          "destFolder":"/appl/home/ciplogs/logs/transfer/e2e"
         }
       ]
     }
