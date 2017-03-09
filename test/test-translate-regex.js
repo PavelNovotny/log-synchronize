@@ -6,13 +6,14 @@
 var sourceAuditRegexp = new RegExp('aspect_alsb_s(\\d).audit(.\\d{8})?(.\\d{2})?');
 var targetAuditExp = 'jms_s$1_alsb_aspect.audit$2$3';
 
+console.log('aspect_alsb_s1.audit'.replace(sourceAuditRegexp, "$1$2"));
 console.log('aspect_alsb_s1.audit'.replace(sourceAuditRegexp, targetAuditExp));
 console.log('aspect_alsb_s1.audit.20170228.07'.replace(sourceAuditRegexp, targetAuditExp));
 console.log('aspect_alsb_s1.audit.20170228'.replace(sourceAuditRegexp, targetAuditExp));
 
 //time
-var sourceTimeRegexp = new RegExp('aspect_alsb_s(\\d).time(.\\d{8})?(.\\d{2})?');
-var targetTimeExp = 'jms_s$1_alsb_aspect.time$2$3';
+var sourceTimeRegexp = new RegExp('aspect_alsb_s(\\d).time(.\\d{8}.\\d{2})?');
+var targetTimeExp = 'jms_s$1_alsb_aspect.time$2';
 
 console.log('aspect_alsb_s1.time'.replace(sourceTimeRegexp, targetTimeExp));
 console.log('aspect_alsb_s1.time.20170228.07'.replace(sourceTimeRegexp, targetTimeExp));
