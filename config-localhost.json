@@ -2,6 +2,10 @@
   "logLevel" : "info",
   "schedule-interval" : 15,
 
+  "cleanup-30bytes-bgz" :[
+    "/Users/pavelnovotny/Downloads/transfer/cleanup-test/",
+    "/Users/pavelnovotny/Downloads/transfer/cleanup-test1/"
+  ],
   "daily-log-cat" :[
     {
       "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy",
