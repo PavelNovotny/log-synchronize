@@ -9,7 +9,7 @@ var winston = require('winston');
 
 nconf.argv()
     .env()
-    .defaults({ 'FILES_SYNC_ENV' : 'pokusy' })
+    .defaults({ 'FILES_SYNC_ENV' : 'localhost' })
     .file({ file: 'config-'+nconf.get('FILES_SYNC_ENV')+'.json' });
 logger = new (winston.Logger)({
     transports: [
@@ -17,6 +17,10 @@ logger = new (winston.Logger)({
     ]
 });
 
-cleanup.clean30ByteFiles(nconf, logger);
-cleanup.clean30ByteFiles(nconf, logger);
+cleanup.clean30ByteFiles(nconf, logger, function(){
+    logger.info("Test clean30Bytest finished");
+});
+cleanup.clean30ByteFiles(nconf, logger, function(){
+    logger.info("Test clean30Bytest finished");
+});
 

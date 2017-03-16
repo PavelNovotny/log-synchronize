@@ -8,19 +8,52 @@
   ],
   "daily-log-cat" :[
     {
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs",
-      "hourLog" : "(other_s|other_s)(\\d)_alsb_aspect.(audit|time)(.\\d{8})(.\\d{2})",
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(other_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
       "dailyLog" : "$1$2_alsb_aspect.$3$4"
     },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/maintest",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs",
-      "hourLog" : "(other_s|other_s)(\\d)_alsb_aspect.(audit|time)(.\\d{8})(.\\d{2})",
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(other_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
       "dailyLog" : "$1$2_alsb_aspect.$3$4"
     },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/e2e",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/e2e_esb_predpr_logs",
-      "hourLog" : "(other_s|other_s)(\\d)_alsb_aspect.(audit|time)(.\\d{8})(.\\d{2})",
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(jms_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+      "dailyLog" : "$1$2_alsb_aspect.$3$4"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(jms_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+      "dailyLog" : "$1$2_alsb_aspect.$3$4"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(other_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+      "dailyLog" : "$1$2_alsb_aspect.$3$4"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(other_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+      "dailyLog" : "$1$2_alsb_aspect.$3$4"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(jms_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+      "dailyLog" : "$1$2_alsb_aspect.$3$4"
+    },{
+      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+      "hourLog" : "(jms_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
       "dailyLog" : "$1$2_alsb_aspect.$3$4"
     }
   ],
