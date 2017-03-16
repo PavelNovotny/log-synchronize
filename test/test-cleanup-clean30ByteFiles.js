@@ -17,8 +17,10 @@ logger = new (winston.Logger)({
     ]
 });
 
-cleanup.clean30ByteFiles(nconf, logger);
-cleanup.clean30ByteFiles(nconf, logger);
-cleanup.clean30ByteFiles(nconf, logger);
-cleanup.clean30ByteFiles(nconf, logger);
+cleanup.clean30ByteFiles(nconf, logger, function(){
+    logger.info("Test clean30Bytest finished");
+});
+cleanup.clean30ByteFiles(nconf, logger, function(){
+    logger.info("Test clean30Bytest finished");
+});
 
