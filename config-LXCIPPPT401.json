@@ -1,6 +1,6 @@
 {
   "logLevel" : "info",
-  "download-interval" : 30,
+  "schedule-interval" : 15,
   "cleanup-30bytes-bgz" :[
     "/appl/home/ciplogs/logs/gf_bpm_predpr_logs",
     "/appl/home/ciplogs/logs/gf_esb_predpr_logs",
