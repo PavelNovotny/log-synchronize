@@ -141,6 +141,46 @@
         }
       ]
     },{
+      "server" : "sxcip401.ux.to2cz.cz",
+      "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+      "port": 22,
+      "username": "cip_logs",
+      "passphrase": null,
+      "kex" : ["diffie-hellman-group1-sha1"],
+      "folders" :[
+        {
+          "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
+          "localFolders":[
+            "/appl/home/ciplogs/logs/transfer/datamig/",
+            "/appl/home/ciplogs/logs/transfer/datamig/hashseek/"
+          ],
+          "fileNames" : [
+            {
+              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+              "local": "jms_s$1_alsb_aspect.$2$3"
+            },{
+              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+              "local": "jms_s$1_alsb_aspect.$2$3"
+            }
+          ]
+        },{
+          "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
+          "localFolders":[
+            "/appl/home/ciplogs/logs/transfer/datamig/",
+            "/appl/home/ciplogs/logs/transfer/datamig/hashseek/"
+          ],
+          "fileNames" : [
+            {
+              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+              "local": "other_s$1_alsb_aspect.$2$3"
+            },{
+              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+              "local": "other_s$1_alsb_aspect.$2$3"
+            }
+          ]
+        }
+      ]
+    },{
       "server" : "sxcip402.ux.to2cz.cz",
       "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
       "port": 22,
