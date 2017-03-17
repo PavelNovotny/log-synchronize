@@ -166,7 +166,6 @@
         },{
           "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
           "localFolders":[
-            sftp://LXCIPPPT401.ux.to2cz.cz/CIPAPPL/transfer/datamig/hashseek
             "/appl/home/ciplogs/logs/transfer/datamig/",
             "/appl/home/ciplogs/logs/transfer/datamig/hashseek/"
           ],
