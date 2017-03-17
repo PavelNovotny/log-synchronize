@@ -152,7 +152,7 @@
           "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
           "localFolders":[
             "/appl/home/ciplogs/logs/transfer/datamig/",
-            "/appl/home/ciplogs/logs/datamig/hashseek"
+            "/appl/home/ciplogs/logs/datamig/hashseek/"
           ],
           "fileNames" : [
             {
@@ -167,7 +167,7 @@
           "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
           "localFolders":[
             "/appl/home/ciplogs/logs/transfer/datamig/",
-            "/appl/home/ciplogs/logs/datamig/hashseek"
+            "/appl/home/ciplogs/logs/datamig/hashseek/"
           ],
           "fileNames" : [
             {
