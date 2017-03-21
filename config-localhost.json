@@ -1,141 +1,151 @@
 {
   "logLevel" : "info",
-  "schedule-interval" : 15,
-
-  "cleanup-30bytes-bgz" :[
-    "/Users/pavelnovotny/Downloads/transfer/cleanup-test/",
-    "/Users/pavelnovotny/Downloads/transfer/cleanup-test1/"
-  ],
-  "daily-log-cat" :[
-    {
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(other_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(other_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(jms_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(jms_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(other_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(other_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(jms_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    },{
-      "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-      "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-      "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-      "hourLog" : "(jms_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-      "dailyLog" : "$1$2_alsb_aspect.$3$4"
-    }
-  ],
-  "remote-transfer" :[
-    {
-      "server" : "sxcip413vm.ux.to2cz.cz",
-      "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
-      "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
-      "folders" :[
+  "tasks" :
+  {
+    "XXcleanup-30bytes-bgz" :{
+      "scheduler" : "*/10 * * * * *",
+      "folders" : [
+        "/Users/pavelnovotny/Downloads/transfer/cleanup-test/",
+        "/Users/pavelnovotny/Downloads/transfer/cleanup-test1/"
+      ]
+    },
+    "daily-log-cat-and-cleanup" :{
+      "scheduler" : "*/3 * * * *",
+      "folders": [
         {
-          "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
-          "localFolders":[
-            "/Users/pavelnovotny/Downloads/transfer/legacy/",
-            "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
-          ],
-          "fileNames" : [
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(other_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(other_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(jms_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(jms_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(other_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(other_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(jms_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
+          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
+          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
+          "hourLog" : "(jms_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        }
+      ]
+    },
+    "XXremote-transfer" :{
+      "interval" : 15,
+      "servers": [
+        {
+          "server" : "sxcip413vm.ux.to2cz.cz",
+          "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
+          "port": 22,
+          "username": "x0534049",
+          "passphrase": "bibione",
+          "folders" :[
             {
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
-              "local": "jms_s$1_alsb_aspect.$2$3"
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
+              "localFolders":[
+                "/Users/pavelnovotny/Downloads/transfer/legacy/",
+                "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_alsb_aspect.$2$3"
+                }
+              ]
             },{
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
-              "local": "jms_s$1_alsb_aspect.$2$3"
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
+              "localFolders":[
+                "/Users/pavelnovotny/Downloads/transfer/legacy/",
+                "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+                  "local": "other_s$1_alsb_aspect.$2$3"
+                }
+              ]
             }
           ]
         },{
-          "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
-          "localFolders":[
-            "/Users/pavelnovotny/Downloads/transfer/legacy/",
-            "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
-          ],
-          "fileNames" : [
+          "server" : "sxcip414vm.ux.to2cz.cz",
+          "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
+          "port": 22,
+          "username": "x0534049",
+          "passphrase": "bibione",
+          "folders" :[
             {
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
-              "local": "other_s$1_alsb_aspect.$2$3"
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
+              "localFolders":[
+                "/Users/pavelnovotny/Downloads/transfer/legacy/",
+                "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_alsb_aspect.$2$3"
+                }
+              ]
             },{
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
-              "local": "other_s$1_alsb_aspect.$2$3"
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
+              "localFolders":[
+                "/Users/pavelnovotny/Downloads/transfer/legacy/",
+                "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+                  "local": "other_s$1_alsb_aspect.$2$3"
+                }
+              ]
             }
           ]
         }
       ]
-    },{
-      "server" : "sxcip414vm.ux.to2cz.cz",
-      "privateKey" : "/Users/pavelnovotny/.ssh/id_rsa",
-      "port": 22,
-      "username": "x0534049",
-      "passphrase": "bibione",
-      "folders" :[
-        {
-          "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
-          "localFolders":[
-            "/Users/pavelnovotny/Downloads/transfer/legacy/",
-            "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
-          ],
-          "fileNames" : [
-            {
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
-              "local": "jms_s$1_alsb_aspect.$2$3"
-            },{
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
-              "local": "jms_s$1_alsb_aspect.$2$3"
-            }
-          ]
-        },{
-          "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
-          "localFolders":[
-            "/Users/pavelnovotny/Downloads/transfer/legacy/",
-            "/Users/pavelnovotny/Downloads/transfer/hashseek/gf_esb_predpr_logs/"
-          ],
-          "fileNames" : [
-            {
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
-              "local": "other_s$1_alsb_aspect.$2$3"
-            },{
-              "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
-              "local": "other_s$1_alsb_aspect.$2$3"
-            }
-          ]
-        }
-      ]
     }
-  ]
+  }
 }
