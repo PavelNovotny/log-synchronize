@@ -89,6 +89,9 @@
                   "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
                   "local": "jms_s$1_alsb_aspect.$2$3"
                 },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}$",
+                  "local": "jms_s$1_alsb_aspect.$2$3"
+                },{
                   "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
                   "local": "jms_s$1_alsb_aspect.$2$3"
                 }
@@ -103,6 +106,9 @@
                 {
                   "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
                   "local": "other_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}$",
+                  "local": "jms_s$1_alsb_aspect.$2$3"
                 },{
                   "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
                   "local": "other_s$1_alsb_aspect.$2$3"
