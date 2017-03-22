@@ -15,7 +15,7 @@
       ]
     },
     "daily-log-cat-and-cleanup" :{
-      "scheduler" : "40 0 * * *",
+      "scheduler" : "0 1 * * *",
       "folders": [
         {
           "sourceFolder":"/appl/home/ciplogs/logs/transfer/maintest/",
