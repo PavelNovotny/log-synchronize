@@ -333,6 +333,26 @@
             }
           ]
         },{
+          "server" : "sxcips401vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/jcp/e2etest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(noe-gf.log)$",
+                  "local": "$1"
+                }
+              ]
+            }
+          ]
+        },{
           "server" : "sxcip401.ux.to2cz.cz",
           "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
           "port": 22,
