@@ -342,12 +342,12 @@
             {
               "remoteFolder":"/app/bea/jcp/e2etest/gf/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/jcp/E2E/"
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/noe-gf/"
               ],
               "fileNames" : [
                 {
-                  "remote" : "(noe-gf.log)$",
-                  "local": "$1"
+                  "remote" : "(noe-gf.log)(.{yesterday})$",
+                  "local": "$1$2"
                 }
               ]
             }
