@@ -346,7 +346,7 @@
               ],
               "fileNames" : [
                 {
-                  "remote" : "(noe-gf.log)(.{yesterday})$",
+                  "remote" : "(noe-gf.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
