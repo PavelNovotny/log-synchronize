@@ -113,6 +113,54 @@
           "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/datamig_predprod/",
           "hourLog" : "(jms_s)(2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
           "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(other_s)(1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(other_s)(2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(jms_s)(1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(jms_s)(2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(other_s)(1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(other_s)(2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(jms_s)(1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "hourLog" : "(jms_s)(2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+          "dailyLog" : "$1$2_alsb_aspect.$3$4"
         }
       ]
     },
