@@ -16,4 +16,4 @@ logger = new (winston.Logger)({
     ]
 });
 
-hourLogCat.catHourLogs(nconf, logger, function() {logger.info("Test finished");});
+hourLogCat.catHourLogs(nconf.get("tasks")["daily-log-cat-and-cleanup"], logger, function() {logger.info("Test finished");});

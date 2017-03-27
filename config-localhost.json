@@ -16,50 +16,39 @@
           "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
           "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
           "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(other_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(other_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(jms_s)(1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(jms_s)(2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(other_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(other_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(jms_s)(1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
-        },{
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "hourLog" : "(jms_s)(2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-          "dailyLog" : "$1$2_alsb_aspect.$3$4"
+          "files" : [
+            {
+              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            }
+          ]
         }
       ]
     },
