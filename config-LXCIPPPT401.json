@@ -350,6 +350,61 @@
                   "local": "$1$2"
                 }
               ]
+            },{
+              "remoteFolder":"/app/bea/jcp/e2etest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/ba-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(ba-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/e2etest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/onecrm-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(onecrm-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/e2etest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/tts-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(tts-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/e2etest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/ipc/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(ipc.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/e2etest/spm/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/E2E/spm/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(spm.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
             }
           ]
         },{
