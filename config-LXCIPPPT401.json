@@ -701,7 +701,7 @@
             {
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_test/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/b2b_test/",
+                "/appl/home/ciplogs/logs/transfer/systest/",
                 "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_test_logs/"
               ],
               "fileNames" : [
