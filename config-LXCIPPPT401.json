@@ -298,7 +298,7 @@
                 }
               ]
             },{
-              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/",
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_e2e_other/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/e2e/",
                 "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/"
@@ -313,7 +313,7 @@
                 }
               ]
             },{
-              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/",
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_e2e_jms/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/e2e/",
                 "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/"
