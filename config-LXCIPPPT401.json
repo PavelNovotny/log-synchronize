@@ -740,6 +740,21 @@
                   "local": "b2b_s$1_alsb_aspect.$2$3"
                 }
               ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/legacy/",
+                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "cip_s1.log$",
+                  "local": "cip_s1.log"
+                },{
+                  "remote" : "cip_s1.log(.{yesterday})$",
+                  "local": "cip_s1.log$1"
+                }
+              ]
             }
           ]
         }
