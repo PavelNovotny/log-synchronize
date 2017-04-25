@@ -2,57 +2,7 @@
   "logLevel" : "info",
   "tasks" :
   {
-    "XXcleanup-30bytes-bgz" :{
-      "scheduler" : "*/10 * * * * *",
-      "folders" : [
-        "/Users/pavelnovotny/Downloads/transfer/cleanup-test/",
-        "/Users/pavelnovotny/Downloads/transfer/cleanup-test1/"
-      ]
-    },
-    "XXdaily-log-cat-and-cleanup" :{
-      "scheduler" : "*/3 * * * *",
-      "folders": [
-        {
-          "sourceFolder":"/Users/pavelnovotny/Downloads/transfer/legacy/",
-          "targetFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/",
-          "indexFolder":"/Users/pavelnovotny/Downloads/transfer/hashseek/esb_predpr_logs/hash/",
-          "files" : [
-            {
-              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            },{
-              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{today})(.\\d{2})$",
-              "dailyLog" : "$1_alsb_aspect.$2$3"
-            }
-          ]
-        }
-      ]
-    },
-    "remote-transfer" :{
+    "remote-transfer" : {
       "interval" : 15,
       "servers": [
         {
@@ -64,7 +14,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/e2e/"
+                "/appl/home/ciplogs/logs/e2e/"
               ],
               "fileNames" : [
                 {
@@ -83,7 +33,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/e2e/"
+                "/appl/home/ciplogs/logs/e2e/"
               ],
               "fileNames" : [
                 {
@@ -102,7 +52,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/e2e/"
+                "/appl/home/ciplogs/logs/e2e/"
               ],
               "fileNames" : [
                 {
@@ -121,7 +71,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/e2e/"
+                "/appl/home/ciplogs/logs/e2e/"
               ],
               "fileNames" : [
                 {
@@ -140,7 +90,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/maintest/"
+                "/appl/home/ciplogs/logs/maintest/"
               ],
               "fileNames" : [
                 {
@@ -159,7 +109,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/maintest/"
+                "/appl/home/ciplogs/logs/maintest/"
               ],
               "fileNames" : [
                 {
@@ -178,7 +128,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/maintest/"
+                "/appl/home/ciplogs/logs/maintest/"
               ],
               "fileNames" : [
                 {
@@ -197,7 +147,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
               "localFolders":[
-                "/Users/pavelnovotny/Downloads/transfer/noe/maintest/"
+                "/appl/home/ciplogs/logs/maintest/"
               ],
               "fileNames" : [
                 {
