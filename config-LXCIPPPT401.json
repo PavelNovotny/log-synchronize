@@ -743,16 +743,16 @@
             },{
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/legacy/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+                "/appl/home/ciplogs/logs/transfer/b2b_predprod/",
+                "/appl/home/ciplogs/logs/transfer/neprepojeno/b2b_predprod/"
               ],
               "fileNames" : [
                 {
                   "remote" : "cip_s1.log$",
-                  "local": "cip_s1.log"
+                  "local": "b2b_cip_s1.log"
                 },{
                   "remote" : "cip_s1.log(.{yesterday})$",
-                  "local": "cip_s1.log$1"
+                  "local": "b2b_cip_s1.log$1"
                 }
               ]
             }
