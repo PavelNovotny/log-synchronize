@@ -1,3 +1,2 @@
-pkill -f sync-noe
-export FILES_SYNC_ENV=LXCIPPPT401-NOE
-nohup node sync-noe.js >> sync-noe.log&
+pkill -f SYNC-NOE
+nohup node sync-cip.js --SYNC_ENV LXCIPPPT401-SYNC-NOE >> sync-noe.log&

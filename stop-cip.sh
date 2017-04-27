@@ -1,1 +1,1 @@
-pkill -f sync-cip
+pkill -f SYNC-CIP

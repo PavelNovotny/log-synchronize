@@ -1,3 +1,2 @@
-pkill -f sync-cip
-export FILES_SYNC_ENV=LXCIPPPT401-CIP
-nohup node sync-cip.js >> sync-cip.log&
+pkill -f SYNC-CIP
+nohup node sync-cip.js --SYNC_ENV LXCIPPPT401-SYNC-CIP >> sync-cip.log&

@@ -1,2 +1,2 @@
-pkill -f sync-noe
+pkill -f SYNC-NOE
 
