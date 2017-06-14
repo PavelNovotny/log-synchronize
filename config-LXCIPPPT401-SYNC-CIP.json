@@ -757,6 +757,46 @@
               ]
             }
           ]
+        },{
+          "server" : "sxcips201vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "x0534049",
+          "password": "icMT&&15",
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_e2e/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/e2e/",
+                "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+                  "local": "b2b_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "b2b_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+                  "local": "b2b_s$1_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_e2e/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/b2b_e2e/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "cip_s1.log$",
+                  "local": "b2b_cip_s1.log"
+                },{
+                  "remote" : "cip_s1.log(.{yesterday})$",
+                  "local": "b2b_cip_s1.log$1"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
