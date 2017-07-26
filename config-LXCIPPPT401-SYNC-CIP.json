@@ -788,6 +788,48 @@
               ]
             }
           ]
+        },{
+          "server" : "sxcips201vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_e2e/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/b2b_e2e/",
+                "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{today}.\\d{2})?$",
+                  "local": "b2b_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "b2b_s$1_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(audit|time)(.{yesterday}.23)$",
+                  "local": "b2b_s$1_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_e2e/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/b2b_predprod/",
+                "/appl/home/ciplogs/logs/transfer/neprepojeno/b2b_predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "cip_s1.log$",
+                  "local": "e2e_b2b_cip_s1.log"
+                },{
+                  "remote" : "cip_s1.log(.{yesterday})$",
+                  "local": "e2e_b2b_cip_s1.log$1"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
