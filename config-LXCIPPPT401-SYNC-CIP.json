@@ -913,8 +913,7 @@
             },{
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_e2e/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/b2b_predprod/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/b2b_predprod/"
+                "/appl/home/ciplogs/logs/transfer/b2b_predprod/"
               ],
               "fileNames" : [
                 {
