@@ -108,6 +108,18 @@
             },{
               "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
               "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
             }
           ]
         },{
@@ -138,6 +150,92 @@
               "dailyLog" : "$1_alsb_aspect.$2$3"
             },{
               "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            }
+          ]
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/legacy/",
+          "targetFolder":"/appl/home/ciplogs/logs/esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/predprod/",
+          "files" : [
+            {
+              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            }
+          ]
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/systest/",
+          "targetFolder":"/appl/home/ciplogs/logs/esb_test_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/test/",
+          "files" : [
+            {
+              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
               "dailyLog" : "$1_alsb_aspect.$2$3"
             }
           ]
@@ -559,7 +657,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/legacy/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+                "/appl/home/ciplogs/logs/esb_predpr_logs/"
               ],
               "fileNames" : [
                 {
@@ -577,7 +675,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/legacy/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+                "/appl/home/ciplogs/logs/esb_predpr_logs/"
               ],
               "fileNames" : [
                 {
@@ -604,7 +702,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/legacy/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+                "/appl/home/ciplogs/logs/esb_predpr_logs/"
               ],
               "fileNames" : [
                 {
@@ -622,7 +720,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/legacy/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+                "/appl/home/ciplogs/logs/esb_predpr_logs/"
               ],
               "fileNames" : [
                 {
@@ -649,7 +747,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/systest/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_test_logs/"
+                "/appl/home/ciplogs/logs/esb_test_logs/"
               ],
               "fileNames" : [
                 {
@@ -667,7 +765,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/systest/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_test_logs/"
+                "/appl/home/ciplogs/logs/esb_test_logs/"
               ],
               "fileNames" : [
                 {
@@ -694,7 +792,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/systest/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_test_logs/"
+                "/appl/home/ciplogs/logs/esb_test_logs/"
               ],
               "fileNames" : [
                 {
@@ -712,7 +810,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/systest/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_test_logs/"
+                "/appl/home/ciplogs/logs/esb_test_logs/"
               ],
               "fileNames" : [
                 {
@@ -739,7 +837,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_test/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/systest/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_test_logs/"
+                "/appl/home/ciplogs/logs/esb_test_logs/"
               ],
               "fileNames" : [
                 {
@@ -757,7 +855,7 @@
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/legacy/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/esb_predpr_logs/"
+                "/appl/home/ciplogs/logs/esb_predpr_logs/"
               ],
               "fileNames" : [
                 {
@@ -774,8 +872,7 @@
             },{
               "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/b2b_predprod/",
-                "/appl/home/ciplogs/logs/transfer/neprepojeno/b2b_predprod/"
+                "/appl/home/ciplogs/logs/transfer/b2b_predprod/"
               ],
               "fileNames" : [
                 {
