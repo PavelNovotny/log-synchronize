@@ -2,6 +2,25 @@
   "logLevel" : "info",
   "tasks" :
   {
+    "cleanup-23hour-log" :{
+      "scheduler" : "0 2 * * *",
+      "folders" : [
+        "/appl/home/ciplogs/logs/bpm_predpr_logs/",
+        "/appl/home/ciplogs/logs/gf_bpm_predpr_logs/",
+        "/appl/home/ciplogs/logs/gf_esb_predpr_logs/",
+        "/appl/home/ciplogs/logs/esb_test_logs/",
+        "/appl/home/ciplogs/logs/datamig_esb_predpr_logs/",
+        "/appl/home/ciplogs/logs/esb_predpr_logs/",
+        "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/",
+        "/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+        "/appl/home/ciplogs/logs/transfer/systest/",
+        "/appl/home/ciplogs/logs/transfer/datamig/",
+        "/appl/home/ciplogs/logs/transfer/e2e/",
+        "/appl/home/ciplogs/logs/transfer/e3e/",
+        "/appl/home/ciplogs/logs/transfer/legacy/",
+        "/appl/home/ciplogs/logs/transfer/maintest/"
+      ]
+    },
     "cleanup-30bytes-bgz" :{
       "scheduler" : "20 * * * *",
       "folders" : [
@@ -11,6 +30,7 @@
         "/appl/home/ciplogs/logs/esb_test_logs/",
         "/appl/home/ciplogs/logs/esb_predpr_logs/",
         "/appl/home/ciplogs/logs/bpm_test_logs/",
+        "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/",
         "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/"
       ]
     },

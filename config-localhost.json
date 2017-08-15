@@ -2,6 +2,13 @@
   "logLevel" : "info",
   "tasks" :
   {
+    "cleanup-23hour-log" :{
+      "scheduler" : "*/10 * * * * *",
+      "folders" : [
+        "/Users/pavelnovotny/Downloads/transfer/cleanup-test/",
+        "/Users/pavelnovotny/Downloads/transfer/cleanup-test1/"
+      ]
+    },
     "XXcleanup-30bytes-bgz" :{
       "scheduler" : "*/10 * * * * *",
       "folders" : [
@@ -52,7 +59,7 @@
         }
       ]
     },
-    "remote-transfer" :{
+    "XXremote-transfer" :{
       "interval" : 15,
       "servers": [
         {
