@@ -7,7 +7,6 @@
       "folders" : [
         "/appl/home/ciplogs/logs/bpm_predpr_logs/",
         "/appl/home/ciplogs/logs/gf_bpm_predpr_logs/",
-        "/appl/home/ciplogs/logs/gf_esb_predpr_logs/",
         "/appl/home/ciplogs/logs/esb_test_logs/",
         "/appl/home/ciplogs/logs/datamig_esb_predpr_logs/",
         "/appl/home/ciplogs/logs/esb_predpr_logs/",
@@ -25,13 +24,13 @@
       "scheduler" : "20 * * * *",
       "folders" : [
         "/appl/home/ciplogs/logs/gf_bpm_predpr_logs/",
-        "/appl/home/ciplogs/logs/gf_esb_predpr_logs/",
+        "/appl/home/ciplogs/logs/bpm_test_logs/",
         "/appl/home/ciplogs/logs/bpm_predpr_logs/",
         "/appl/home/ciplogs/logs/esb_test_logs/",
         "/appl/home/ciplogs/logs/esb_predpr_logs/",
-        "/appl/home/ciplogs/logs/bpm_test_logs/",
+        "/appl/home/ciplogs/logs/gf_esb_predpr_logs/",
         "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/",
-        "/appl/home/ciplogs/logs/e2e_esb_predpr_logs/"
+        "/appl/home/ciplogs/logs/e3e_esb_predpr_logs/"
       ]
     },
     "daily-log-cat-and-cleanup" :{
