@@ -6,6 +6,7 @@
 var cleanup = require('../lib/cleanup.js');
 var nconf = require('nconf');
 var winston = require('winston');
+var utils = require('../lib/utils.js');
 
 nconf.argv()
     .env()
@@ -13,7 +14,7 @@ nconf.argv()
     .file({ file: 'config-'+nconf.get('FILES_SYNC_ENV')+'.json' });
 logger = new (winston.Logger)({
     transports: [
-        new (winston.transports.Console)({'timestamp':true, 'level': nconf.get('logLevel')})
+        new (winston.transports.Console)({'timestamp':utils.timestamp, 'level': nconf.get('logLevel')})
     ]
 });
 cleanup.clean23hourFiles(nconf.get('tasks')['cleanup-23hour-log'], logger, function(){
