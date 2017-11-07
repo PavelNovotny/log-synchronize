@@ -157,6 +157,82 @@
               ]
             }
           ]
+        },{
+          "server" : "lxnoee3egf401vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "noegfmon",
+          "password": "j5x*6=TH",
+          "folders" :[
+            {
+              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-sy-srv-04-401.log$1"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "lxnoee3egf402vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "noegfmon",
+          "password": "v2-Q8=aG",
+          "folders" :[
+            {
+              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-sy-srv-01-402.log$1"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "lxnoee3egf403vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "noegfmon",
+          "password": "j*A-9G7v",
+          "folders" :[
+            {
+              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-sy-srv-02-403.log$1"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "lxnoee3egf404vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "noegfmon",
+          "password": "a=3*3ArJ",
+          "folders" :[
+            {
+              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-sy-srv-03-404.log$1"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
