@@ -166,7 +166,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
@@ -185,7 +185,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
@@ -204,7 +204,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
@@ -223,7 +223,7 @@
             {
               "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
+                "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
