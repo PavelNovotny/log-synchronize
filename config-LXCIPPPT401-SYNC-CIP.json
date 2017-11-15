@@ -571,6 +571,72 @@
                   "local": "$1$2"
                 }
               ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/noe-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(noe-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/ba-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(ba-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/onecrm-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(onecrm-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/tts-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(tts-gf.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/ipc/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(ipc.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/spm/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/spm/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(spm.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
             }
           ]
         },{
