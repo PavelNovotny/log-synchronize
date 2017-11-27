@@ -594,6 +594,17 @@
                 }
               ]
             },{
+              "remoteFolder":"/app/bea/jcp/maintest/mnp/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/mnp/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(mnp.*.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
               "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/onecrm-gf/"
