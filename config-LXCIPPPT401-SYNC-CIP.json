@@ -534,7 +534,7 @@
               ],
               "fileNames" : [
                 {
-                  "remote" : "(onecrm-gf.log)(.{yesterday})?$",
+                  "remote" : "(onecrm-gf_db.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
