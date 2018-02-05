@@ -574,6 +574,17 @@
             },{
               "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
               "localFolders":[
+                "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/onecrm-gf/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "(onecrm-gf_db.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/noe-gf/"
               ],
               "fileNames" : [
