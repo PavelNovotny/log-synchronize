@@ -1,0 +1,32 @@
+{
+  "logLevel" : "info",
+  "tasks" :
+  {
+    "remote-transfer" : {
+      "interval" : 15,
+      "servers": [
+        {
+          "server" : "sxcips403vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/.ssh/id_rsa",
+          "port": 2222,
+          "username": "mktcmon",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/appl/mktc/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "app-mktc.log$",
+                  "local": "app-mktc.log"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
