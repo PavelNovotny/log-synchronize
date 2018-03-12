@@ -133,6 +133,52 @@
             }
           ]
         },{
+          "server" : "lxmktcfeppt402vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/.ssh/id_rsa",
+          "port": 2222,
+          "username": "mktcmon",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/appl/mktc/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "mktcui.log$",
+                  "local": "mktcui.f402.log"
+                },{
+                  "remote" : "mktcui-pages.log$",
+                  "local": "mktcui-pages.f402.log"
+                },{
+                  "remote" : "mktcui-error.log$",
+                  "local": "mktcui-error.f402.log"
+                },{
+                  "remote" : "mktcui(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui$1$2.f402.log$3"
+                },{
+                  "remote" : "mktcui-pages(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui-pages$1$2.f402.log$3"
+                },{
+                  "remote" : "mktcui-error(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui-error$1$2.f402.log$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/appl/mktc/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-ui.f402.log$1"
+                }
+              ]
+            }
+          ]
+        },{
           "server" : "lxmktcbeppt401vm.ux.to2cz.cz",
           "privateKey" : "/appl/home/ciplogs/.ssh/id_rsa",
           "port": 2222,
@@ -179,7 +225,59 @@
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-ui.b401.log$1"
+                  "local": "server-be.b401.log$1"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "lxmktcbeppt402vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/.ssh/id_rsa",
+          "port": 2222,
+          "username": "mktcmon",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/appl/mktc/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "mktc-api-ws.log$",
+                  "local": "mktc-api-ws.b402.log"
+                },{
+                  "remote" : "mktc-api-rest.log$",
+                  "local": "mktc-api-rest.b402.log"
+                },{
+                  "remote" : "mktc-api-ws(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktc-api-ws$1$2.b402.log$3"
+                },{
+                  "remote" : "mktc-api-rest(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktc-api-rest$1$2.b402.log$3"
+                },{
+                  "remote" : "mktc-import.log$",
+                  "local": "mktc-import.b402.log"
+                },{
+                  "remote" : "mktc-import(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktc-import$1$2.b402.log$3"
+                },{
+                  "remote" : "mktc-export.log$",
+                  "local": "mktc-export.b402.log"
+                },{
+                  "remote" : "mktc-export(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktc-export$1$2.b402.log$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/appl/mktc/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-be.b402.log$1"
                 }
               ]
             }
