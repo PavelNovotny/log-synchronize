@@ -6,7 +6,7 @@
       "interval" : 15,
       "servers": [
         {
-          "server" : "sxcips403vm.ux.to2cz.cz",
+          "server" : "lxmktctst401vm.ux.to2cz.cz",
           "privateKey" : "/appl/home/ciplogs/.ssh/id_rsa",
           "port": 2222,
           "username": "mktcmon",
