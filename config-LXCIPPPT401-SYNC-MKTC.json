@@ -15,12 +15,38 @@
             {
               "remoteFolder":"/appl/mktc/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/mktc/"
+                "/appl/home/ciplogs/logs/mktc/systest/"
               ],
               "fileNames" : [
                 {
-                  "remote" : "app-mktc.log$",
-                  "local": "app-mktc.log"
+                  "remote" : "mktc-api-ws.log(.{yesterday})?(.gz)?$",
+                  "local": "mktc-api-ws.log$1$2"
+                },{
+                  "remote" : "mktc-api-rest.log(.{yesterday})?(.gz)?$",
+                  "local": "mktc-api-rest.log$1$2"
+                }
+              ]
+            },{
+              "remoteFolder":"/appl/mktc/jboss-eap-6.4/standalone-mktc-ui/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/systest/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-ui.log$1"
+                }
+              ]
+            }
+            },{
+              "remoteFolder":"/appl/mktc/jboss-eap-6.4/standalone-mktc-be/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/systest/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-be.log$1"
                 }
               ]
             }
