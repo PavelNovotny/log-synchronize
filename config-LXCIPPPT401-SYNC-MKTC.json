@@ -25,11 +25,23 @@
                   "remote" : "mktc-api-rest.log$",
                   "local": "mktc-api-rest.log"
                 },{
-                  "remote" : "mktc-api-ws-(.{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "remote" : "mktc-api-ws(-{yesterday})(-\\d\\d)?.log(.gz)?$",
                   "local": "mktc-api-ws$1$2.log$3"
                 },{
-                  "remote" : "mktc-api-rest-(.{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "remote" : "mktc-api-rest(-{yesterday})(-\\d\\d)?.log(.gz)?$",
                   "local": "mktc-api-rest$1$2.log$3"
+                },{
+                  "remote" : "mktc-import.log$",
+                  "local": "mktc-import.log"
+                },{
+                  "remote" : "mktc-import(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktc-import$1$2.log$3"
+                },{
+                  "remote" : "mktc-export.log$",
+                  "local": "mktc-export.log"
+                },{
+                  "remote" : "mktc-export(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktc-export$1$2.log$3"
                 }
               ]
             },{
