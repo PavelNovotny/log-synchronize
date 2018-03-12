@@ -42,6 +42,24 @@
                 },{
                   "remote" : "mktc-export(-{yesterday})(-\\d\\d)?.log(.gz)?$",
                   "local": "mktc-export$1$2.log$3"
+                },{
+                  "remote" : "mktcui.log$",
+                  "local": "mktcui.log"
+                },{
+                  "remote" : "mktcui-pages.log$",
+                  "local": "mktcui-pages.log"
+                },{
+                  "remote" : "mktcui-error.log$",
+                  "local": "mktcui-error.log"
+                },{
+                  "remote" : "mktcui(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui$1$2.log$3"
+                },{
+                  "remote" : "mktcui-pages(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui-pages$1$2.log$3"
+                },{
+                  "remote" : "mktcui-error(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui-error$1$2.log$3"
                 }
               ]
             },{
@@ -64,6 +82,52 @@
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
                   "local": "server-be.log$1"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "lxmktcfeppt401vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/.ssh/id_rsa",
+          "port": 2222,
+          "username": "mktcmon",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/appl/mktc/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "mktcui.log$",
+                  "local": "mktcui.lxmktcfeppt401vm.log"
+                },{
+                  "remote" : "mktcui-pages.log$",
+                  "local": "mktcui-pages.lxmktcfeppt401vm.log"
+                },{
+                  "remote" : "mktcui-error.log$",
+                  "local": "mktcui-error.lxmktcfeppt401vm.log"
+                },{
+                  "remote" : "mktcui(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui$1$2.lxmktcfeppt401vm.log$3"
+                },{
+                  "remote" : "mktcui-pages(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui-pages$1$2.lxmktcfeppt401vm.log$3"
+                },{
+                  "remote" : "mktcui-error(-{yesterday})(-\\d\\d)?.log(.gz)?$",
+                  "local": "mktcui-error$1$2.lxmktcfeppt401vm.log$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/appl/mktc/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/mktc/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-ui.lxmktcfeppt401vm.log$1"
                 }
               ]
             }
