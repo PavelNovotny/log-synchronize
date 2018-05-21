@@ -675,7 +675,11 @@
               ],
               "fileNames" : [
                 {
-                  "remote" : "(spm.log)(.{yesterday})?$",
+                  "remote" : "(cip2spm.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(spm2cip.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
