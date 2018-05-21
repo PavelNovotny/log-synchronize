@@ -583,24 +583,44 @@
                 }
               ]
             },{
-              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "remoteFolder":"/app/bea/jcp/maintest/noegf/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/noe-gf/"
               ],
               "fileNames" : [
                 {
-                  "remote" : "(noe-gf.log)(.{yesterday})?$",
+                  "remote" : "(cip2noe.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(noe2cip.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
             },{
-              "remoteFolder":"/app/bea/jcp/maintest/gf/logs/",
+              "remoteFolder":"/app/bea/jcp/maintest/bagf/logs/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/transfer/jcp/MAINTEST/ba-gf/"
               ],
               "fileNames" : [
                 {
-                  "remote" : "(ba-gf.log)(.{yesterday})?$",
+                  "remote" : "(cip2ba_notif.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(cip2ba.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(ba_crm2cip.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(ba_noe2cip.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(ba_notif2cp.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
