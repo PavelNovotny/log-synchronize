@@ -12,14 +12,14 @@
           "password": "j5x*6=TH",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-01/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-04-401.log$1"
+                  "local": "server-sy-srv-01-401.log$1"
                 }
               ]
             }
@@ -31,14 +31,14 @@
           "password": "v2-Q8=aG",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-02/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-01-402.log$1"
+                  "local": "server-sy-srv-02-402.log$1"
                 }
               ]
             }
@@ -50,14 +50,14 @@
           "password": "j*A-9G7v",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-03/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-02-403.log$1"
+                  "local": "server-sy-srv-03-403.log$1"
                 }
               ]
             }
@@ -69,14 +69,14 @@
           "password": "a=3*3ArJ",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-04/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e2e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-03-404.log$1"
+                  "local": "server-sy-srv-04-404.log$1"
                 }
               ]
             }
@@ -88,14 +88,14 @@
           "password": "h+56pX=Q",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-01/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/maintest/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-04-401.log$1"
+                  "local": "server-sy-srv-01-401.log$1"
                 }
               ]
             }
@@ -107,14 +107,14 @@
           "password": "C*C9*s3v",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-02/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/maintest/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-01-402.log$1"
+                  "local": "server-sy-srv-02-402.log$1"
                 }
               ]
             }
@@ -126,14 +126,14 @@
           "password": "T2-+h3hM",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-03/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/maintest/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-02-403.log$1"
+                  "local": "server-sy-srv-03-403.log$1"
                 }
               ]
             }
@@ -145,14 +145,14 @@
           "password": "sF--3q6R",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-04/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/maintest/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-03-404.log$1"
+                  "local": "server-sy-srv-04-404.log$1"
                 }
               ]
             }
@@ -164,14 +164,14 @@
           "password": "j5x*6=TH",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-04/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-01/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-04-401.log$1"
+                  "local": "server-sy-srv-01-401.log$1"
                 }
               ]
             }
@@ -183,14 +183,14 @@
           "password": "v2-Q8=aG",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-01/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-02/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-01-402.log$1"
+                  "local": "server-sy-srv-02-402.log$1"
                 }
               ]
             }
@@ -202,14 +202,14 @@
           "password": "j*A-9G7v",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-02/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-03/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-02-403.log$1"
+                  "local": "server-sy-srv-03-403.log$1"
                 }
               ]
             }
@@ -221,14 +221,14 @@
           "password": "a=3*3ArJ",
           "folders" :[
             {
-              "remoteFolder":"/jboss-domain/servers/pfp-sy-srv-03/log/",
+              "remoteFolder":"/appl/noegf/jboss/jboss-eap-6.4/domain/servers/pfp-sy-srv-04/log/",
               "localFolders":[
                 "/appl/home/ciplogs/logs/noe_predpr_logs/e3e/"
               ],
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-sy-srv-03-404.log$1"
+                  "local": "server-sy-srv-04-404.log$1"
                 }
               ]
             }
