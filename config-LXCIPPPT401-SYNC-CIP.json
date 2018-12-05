@@ -247,7 +247,7 @@
             {
               "remoteFolder":"/app/bea/jcp/e3etest/noe-gf/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/jcp/E3/noe-gf/"
+                "/appl/home/ciplogs/logs/transfer/jcp/E3/"
               ],
               "fileNames" : [
                 {
@@ -258,7 +258,7 @@
             },{
               "remoteFolder":"/app/bea/jcp/e3etest/ba-gf/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/jcp/E3/ba-gf/"
+                "/appl/home/ciplogs/logs/transfer/jcp/E3/"
               ],
               "fileNames" : [
                 {
@@ -269,7 +269,7 @@
             },{
               "remoteFolder":"/app/bea/jcp/e3etest/onecrm-gf/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/jcp/E3/onecrm-gf/"
+                "/appl/home/ciplogs/logs/transfer/jcp/E3/"
               ],
               "fileNames" : [
                 {
@@ -280,7 +280,7 @@
             },{
               "remoteFolder":"/app/bea/jcp/e3etest/spm/logs/",
               "localFolders":[
-                "/appl/home/ciplogs/logs/transfer/jcp/E3/spm/"
+                "/appl/home/ciplogs/logs/transfer/jcp/E3/"
               ],
               "fileNames" : [
                 {
