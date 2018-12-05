@@ -251,7 +251,11 @@
               ],
               "fileNames" : [
                 {
-                  "remote" : "(noe-gf.log)(.{yesterday})?$",
+                  "remote" : "(cip2noe.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(noe2cip.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
@@ -262,7 +266,11 @@
               ],
               "fileNames" : [
                 {
-                  "remote" : "(ba-gf.log)(.{yesterday})?$",
+                  "remote" : "(cip2ba.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(ba2cip.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
@@ -284,7 +292,11 @@
               ],
               "fileNames" : [
                 {
-                  "remote" : "(spm.log)(.{yesterday})?$",
+                  "remote" : "(cip2spm.log)(.{yesterday})?$",
+                  "local": "$1$2"
+                },
+                {
+                  "remote" : "(spm2cip.log)(.{yesterday})?$",
                   "local": "$1$2"
                 }
               ]
