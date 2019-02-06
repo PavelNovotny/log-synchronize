@@ -1,0 +1,419 @@
+{
+  "logLevel" : "info",
+  "tasks" :
+  {
+    "daily-log-cat-and-cleanup" :{
+      "scheduler" : "0 1 * * *",
+      "folders": [
+        {
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/e3e/",
+          "targetFolder":"/appl/home/ciplogs/logs/e3e_esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/e3e_predprod/",
+          "files" : [
+            {
+              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            }
+          ]
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/legacy/",
+          "targetFolder":"/appl/home/ciplogs/logs/esb_predpr_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/predprod/",
+          "files" : [
+            {
+              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            }
+          ]
+        },{
+          "sourceFolder":"/appl/home/ciplogs/logs/transfer/systest/",
+          "targetFolder":"/appl/home/ciplogs/logs/esb_test_logs/",
+          "indexFolder":"/appl/home/ciplogs/logs/hashSeek/hash/test/",
+          "files" : [
+            {
+              "hourLog" : "(other_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(other_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(jms_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(audit)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s1)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            },{
+              "hourLog" : "(b2b_s2)_alsb_aspect.(time)(.{yesterday})(.\\d{2})$",
+              "dailyLog" : "$1_alsb_aspect.$2$3"
+            }
+          ]
+        }
+      ]
+    },
+    "remote-transfer" : {
+      "interval" : 15,
+      "servers": [
+        {
+          "server" : "sxcips403vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_e3e_other/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/e3/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_e3_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "other_s$1_e3_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "other_s$1_e3_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_e3e_jms/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/e3/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_e3_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "jms_s$1_e3_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_e3_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "sxcip413vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "jms_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_pp_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "other_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "other_s$1_pp_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "sxcip414vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_jms/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "jms_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_pp_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_predpr_other/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "other_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "other_s$1_pp_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "sxcip415vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/systest/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "jms_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_st_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/systest/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "other_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "other_s$1_st_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "sxcip416vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_jms/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/systest/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "jms_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "jms_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "jms_s$1_st_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_esb_test_other/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/systest/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "other_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "other_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "other_s$1_st_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "sxcip211vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_test/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/b2b_test/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "b2b_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "b2b_s$1_st_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "b2b_s$1_st_alsb_aspect.$2$3"
+                }
+              ]
+            },{
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_predpr/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/b2b_predprod/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "b2b_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "b2b_s$1_pp_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "b2b_s$1_pp_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        },{
+          "server" : "sxcips201vm.ux.to2cz.cz",
+          "privateKey" : "/appl/home/ciplogs/logs/transfer/.cip_logs/id_rsa",
+          "port": 22,
+          "username": "cip_logs",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/app/bea/OFM11g/user_projects/domains/cip_b2b_e2e/logs/",
+              "localFolders":[
+                "/appl/home/ciplogs/logs/logstash/b2b_e2e/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{today}.\\d{2})?$",
+                  "local": "b2b_s$1_e2_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday})$",
+                  "local": "b2b_s$1_e2_alsb_aspect.$2$3"
+                },{
+                  "remote" : "aspect_alsb_s(\\d).(time)(.{yesterday}.23)$",
+                  "local": "b2b_s$1_e2_alsb_aspect.$2$3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
