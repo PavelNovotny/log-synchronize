@@ -1,1 +1,1 @@
-pkill -f SYNC-ELSE_PROXY
+pkill -f lxcip403-SYNC-ELSE_PROXY
