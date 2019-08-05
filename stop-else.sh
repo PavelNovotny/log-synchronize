@@ -1,0 +1,1 @@
+pkill -f SYNC-ELSE_PROXY

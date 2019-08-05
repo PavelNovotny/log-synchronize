@@ -1,0 +1,51 @@
+{
+  "logLevel" : "info",
+  "tasks" :
+  {
+    "remote-transfer" : {
+      "interval" : 15,
+      "servers": [
+        {
+          "server" : "lxelsepgf201vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "elsemon",
+          "password": "",
+          "folders" :[
+            {
+              "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/home/cip/else-log/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-201.log$1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "server" : "lxelsepgf202vm.ux.to2cz.cz",
+          "port": 22,
+          "username": "elsemon",
+          "password": "",
+          "folders" :[
+            {
+              "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/home/cip/else-log/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-202.log$1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
