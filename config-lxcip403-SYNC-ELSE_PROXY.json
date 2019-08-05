@@ -7,9 +7,10 @@
       "servers": [
         {
           "server" : "lxelsepgf201vm.ux.to2cz.cz",
-          "port": 22,
+          "port": 2222,
           "username": "elsemon",
-          "password": "",
+          "privateKey" : "/appl/home/cip/.ssh/id_rsa",
+          "passphrase": null,
           "folders" :[
             {
               "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
@@ -27,9 +28,10 @@
         },
         {
           "server" : "lxelsepgf202vm.ux.to2cz.cz",
-          "port": 22,
+          "port": 2222,
           "username": "elsemon",
-          "password": "",
+          "privateKey" : "/appl/home/cip/.ssh/id_rsa",
+          "passphrase": null,
           "folders" :[
             {
               "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
