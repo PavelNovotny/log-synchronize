@@ -21,6 +21,10 @@
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
                   "local": "server-201.log$1"
+                },
+                {
+                  "remote" : "else_audit.log(.{noe-yesterday})?$",
+                  "local": "else_audit-201.log$1"
                 }
               ]
             }
@@ -42,6 +46,10 @@
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
                   "local": "server-202.log$1"
+                },
+                {
+                  "remote" : "else_audit.log(.{noe-yesterday})?$",
+                  "local": "else_audit-202.log$1"
                 }
               ]
             }
