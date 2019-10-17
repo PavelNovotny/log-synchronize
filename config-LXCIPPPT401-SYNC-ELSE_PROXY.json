@@ -15,7 +15,7 @@
             {
               "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
               "localFolders":[
-                "/home/ciplogs/logs/else_systest_logs"
+                "/home/ciplogs/logs/else_systest_logs/"
               ],
               "fileNames" : [
                 {
