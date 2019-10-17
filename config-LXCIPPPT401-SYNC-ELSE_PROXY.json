@@ -20,11 +20,11 @@
               "fileNames" : [
                 {
                   "remote" : "server.log(.{noe-yesterday})?$",
-                  "local": "server-201.log$1"
+                  "local": "server-401.log$1"
                 },
                 {
                   "remote" : "else_audit.log(.{noe-yesterday})?$",
-                  "local": "else_audit-201.log$1"
+                  "local": "else_audit-401.log$1"
                 }
               ]
             }
