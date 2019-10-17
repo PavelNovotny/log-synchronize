@@ -1,0 +1,36 @@
+{
+  "logLevel" : "info",
+  "tasks" :
+  {
+    "remote-transfer" : {
+      "interval" : 15,
+      "servers": [
+        {
+          "server" : "lxelseptst401vm.ux.to2cz.cz",
+          "port": 2222,
+          "username": "elsemon",
+          "privateKey" : "/home/ciplogs/.ssh/id_rsa",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/home/ciplogs/logs/else_systest_logs"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-201.log$1"
+                },
+                {
+                  "remote" : "else_audit.log(.{noe-yesterday})?$",
+                  "local": "else_audit-201.log$1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
