@@ -9,7 +9,7 @@
           "server" : "lxelsepe3egf201vm.ux.to2cz.cz",
           "port": 2222,
           "username": "elsemon",
-          "privateKey" : "/appl/home/cip/.ssh/id_rsa",
+          "privateKey" : "/home/ciplogs/.ssh/id_rsa",
           "passphrase": null,
           "folders" :[
             {
