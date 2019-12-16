@@ -6,6 +6,31 @@
       "interval" : 15,
       "servers": [
         {
+          "server" : "lxelsepe3egf201vm.ux.to2cz.cz",
+          "port": 2222,
+          "username": "elsemon",
+          "privateKey" : "/appl/home/cip/.ssh/id_rsa",
+          "passphrase": null,
+          "folders" :[
+            {
+              "remoteFolder":"/appl/elastic/jboss-eap-6.4/standalone/log/",
+              "localFolders":[
+                "/home/ciplogs/logs/else_e3_logs/"
+              ],
+              "fileNames" : [
+                {
+                  "remote" : "server.log(.{noe-yesterday})?$",
+                  "local": "server-e3-201.log$1"
+                },
+                {
+                  "remote" : "else_audit.log(.{noe-yesterday})?$",
+                  "local": "else_audit-e3-201.log$1"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "server" : "lxelseptst401vm.ux.to2cz.cz",
           "port": 2222,
           "username": "elsemon",
